@@ -7,15 +7,15 @@
 body {
   background-color: #f7f7f7;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .container {
   margin: 0 auto;
-  padding: 40px;
+  padding: 2.5rem;
   display: grid;
 }
 .logo {
@@ -27,22 +27,33 @@ p {
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
-  margin: 40px 0;
+  margin: 2.5rem 0;
+  padding: 0px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .menu-lista li {
-  padding: 8px 16px;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 0.25rem;
+}
+
+.menu-lista li a {
+  display: block;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: solid 2px transparent;
+}
+.menu-lista li a:hover {
+  border: solid red 2px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -52,25 +63,30 @@ p {
   display: grid;
   align-content: center;
   text-align: right;
-  gap: 20px;
-  padding: 20px 20px;
+  gap: 1.25rem;
+  padding: 1.25rem;
   background-color: #fff;
 }
 
 .descricao .titulo {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .descricao .link {
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   background-color: #ee2211;
   justify-self: end;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   text-transform: uppercase;
 }
 
-.decorador {
+.descricao .link:hover {
+  background-color: #900;
+}
+
+.descricao::after {
+  content: "";
   height: 5px;
   width: 50px;
   background-color: #ee2211;
@@ -86,25 +102,34 @@ p {
 
 .subtitulo {
   text-transform: uppercase;
-  font-size: 40px;
-  padding: 20px;
+  font-size: 2.5rem;
+  padding: 1.25rem;
   color: #c6c6c6;
   align-self: center;
   text-align: right;
+  background-image: url("../assets/icons/onda.svg");
 }
 
 .info {
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .item {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
+  padding: 1.25rem;
+}
+
+.item:hover {
+  border-left: solid 4px red;
+}
+.item:nth-child(odd) {
+  background-color: #f7f7f7;
 }
 
 .item p {
@@ -117,7 +142,7 @@ p {
 
 .rodape {
   text-align: center;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #fff;
   width: 100%;
 }
