@@ -63,6 +63,7 @@ p {
   display: grid;
   align-content: center;
   text-align: right;
+  /* justify-items: end; */
   gap: 1.25rem;
   padding: 1.25rem;
   background-color: #fff;
@@ -97,6 +98,7 @@ p {
 }
 
 .foto-bicicleta {
+  display: block;
   max-width: 100%;
 }
 
@@ -145,4 +147,56 @@ p {
   padding: 1.25rem;
   background-color: #fff;
   width: 100%;
+}
+
+@media (width < 700px) {
+  header .menu-lista {
+    gap: 0.5rem;
+  }
+
+  p {
+    /* font-size: 75%; */
+    font-size: 1rem;
+  }
+  .foto-bicicleta {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+  .item {
+    padding: 0;
+  }
+}
+
+@media (width <= 400px) {
+  .menu-lista {
+    margin: 1rem 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .descricao {
+    text-align: center;
+    justify-content: center;
+  }
+  .descricao .link {
+    justify-self: center;
+  }
+  .descricao::after {
+    display: none;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+
+  .item {
+    gap: 8px 16px;
+  }
 }
