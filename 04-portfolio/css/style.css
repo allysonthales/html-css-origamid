@@ -37,7 +37,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2.5rem 0;
+  padding: 2.5rem 0;
 }
 
 .header-menu {
@@ -64,18 +64,25 @@ body {
   display: block;
 }
 
-/* .intro-titulo::before{
+.intro-titulo::before {
   content: "";
+  display: block;
   width: 8.75rem;
-  height: 2.5rem;
-  trans
-} */
+  height: 8.5rem;
+  background-image: url(../img/detalhe.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: -1;
+}
 
 .intro-titulo {
   font-weight: 700;
   font-size: 72px;
   line-height: 80px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .intro-subtitulo {
@@ -170,4 +177,202 @@ body {
   padding: 5px 10px;
   background-color: #fff;
   border-radius: 5px;
+}
+
+.bg-gray {
+  background-color: var(--color-c13);
+  position: relative;
+}
+
+.bg-gray::after {
+  content: "";
+  display: block;
+  width: 8.75rem;
+  height: 8.5rem;
+  background-image: url(../img/detalhe.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -70px;
+  left: 200px;
+}
+.formacao {
+  display: flex;
+  gap: 120px;
+  padding: 120px 0;
+}
+
+.formacao-titulo {
+  font-size: 144px;
+  font-weight: 700;
+  color: #000;
+  word-wrap: break-word;
+  width: 380px;
+}
+
+.formacao-info {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.formacao-subtitulo {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-c06);
+}
+
+.formacao-subtitulo span {
+  color: #fff;
+  font-weight: 700;
+}
+
+.formacao-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.formacao-item-tipo::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background-image: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+  position: absolute;
+  top: 20px;
+  left: -2px;
+}
+
+.formacao-item {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 5px;
+  width: 200px;
+  position: relative;
+}
+
+.formacao-item-tipo {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-c06);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.formacao-item-nome {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  margin-bottom: 50px;
+  width: 120px;
+}
+
+.formacao-item-local {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--color-c06);
+  text-transform: uppercase;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 120px;
+}
+
+.lista-formacao,
+.formacao-idiomas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formacao-cursos-info::before,
+.formacao-idioma-info::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.formacao-cursos-info::before {
+  background-image: url("../img/cursos.svg");
+}
+
+.formacao-idioma-info::before {
+  background-image: url("../img/idiomas.svg");
+}
+
+.formacao-cursos-info,
+.formacao-idioma-info {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-c07);
+  margin-bottom: 10px;
+}
+
+.formacao-cursos-item,
+.formacao-idioma-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.curso-item-nome,
+.curso-item-horas,
+.formacao-idioma-lingua,
+.formacao-idioma-level {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.curso-item-nome,
+.formacao-idioma-lingua {
+  color: #fff;
+}
+
+.curso-item-horas,
+.formacao-idioma-level {
+  color: var(--color-c07);
+}
+
+.bg-black {
+  background-color: #000;
+  padding-top: 120px;
+}
+
+.rodape-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.rodape-msg {
+  color: var(--color-c04);
+  font-size: 24px;
+  line-height: 32px;
+  width: 430px;
+}
+
+.rodape-contato {
+  color: #fff;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.contato-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.rodape-direitos {
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--color-c07);
 }
