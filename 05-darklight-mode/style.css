@@ -5,16 +5,18 @@
   --primary-color-hover: #900;
   --text-color: #000;
   --subtitle-color: rgba(0, 0, 0, 0.2);
+  --bg-onda: url(./img/onda-light.svg);
+  --logo-mode: #000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #121212;
     --bg-link-color: #000;
-    --primary-color: #e21;
-    --primary-color-hover: #900;
     --text-color: #fff;
     --subtitle-color: rgba(255, 255, 255, 0.2);
+    --bg-onda: url(./img/onda-dark.svg);
+    --logo-mode: #fff;
   }
 }
 body {
@@ -26,6 +28,7 @@ body {
   margin-top: 60px;
   background-color: var(--bg-color);
   color: var(--text-color);
+  box-sizing: border-box;
 }
 
 img {
@@ -59,6 +62,10 @@ p {
   display: grid;
   gap: 60px;
   justify-items: center;
+}
+
+.header svg {
+  fill: var(--logo-mode);
 }
 
 .menu {
@@ -120,7 +127,7 @@ p {
 
 .botao {
   background: var(--primary-color);
-  color: var(--bg-link-color);
+  color: #fff;
   padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
@@ -137,7 +144,7 @@ p {
   text-align: right;
   padding: 40px;
   align-self: center;
-  background-image: url("./img/onda.svg");
+  background-image: var(--bg-onda);
   /* word-break: break-all; */
 }
 
