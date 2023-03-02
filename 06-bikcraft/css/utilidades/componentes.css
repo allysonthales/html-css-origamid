@@ -18,10 +18,21 @@
   font-size: 1.125rem;
   line-height: 1.33;
   text-transform: uppercase;
+  max-width: max-content;
 }
 
 .btn:hover {
   background-image: linear-gradient(#ffb60d, #e59317);
+}
+
+.btn.secundario {
+  background-color: var(--cor-10);
+  color: var(--cor-4);
+  background-image: none;
+}
+
+.btn.secundario:hover {
+  background-color: var(--cor-9);
 }
 
 @media (width < 600px) {
