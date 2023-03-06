@@ -4,6 +4,7 @@
 @import "./global/header.css";
 @import "./global/footer.css";
 @import "./utilidades/componentes.css";
+@import "./utilidades/formulario.css";
 
 /* home */
 @import "./home/introducao.css";
@@ -26,3 +27,7 @@
 /* bicicleta */
 @import "./bicicleta/bicicleta.css";
 @import "./bicicleta/seguro.css";
+
+/* contato */
+@import "./contato/contato.css";
+@import "./contato/loja.css";

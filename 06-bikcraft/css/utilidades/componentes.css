@@ -19,6 +19,8 @@
   line-height: 1.33;
   text-transform: uppercase;
   max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
