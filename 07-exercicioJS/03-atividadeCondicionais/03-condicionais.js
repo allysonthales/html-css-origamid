@@ -11,14 +11,14 @@ const btn = document.querySelector('.btn')
 const valor = document.querySelector('div')
 let valorAtual = 0
 
-function somar() {
-  if(valorAtual < 10){
-    valorAtual++
-  valor.innerText = valorAtual
-
-  }else{
-    console.log("Número maximo atingido.");
+if(btn){
+btn.addEventListener("click", somar);
+  function somar() {
+    if(valorAtual < 10){
+      valorAtual++
+    valor.innerText = valorAtual
+    }else{
+      console.log("Número maximo atingido.");
+    }
   }
 }
-
-btn.addEventListener('click', somar);
