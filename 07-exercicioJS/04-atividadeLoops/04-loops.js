@@ -10,10 +10,11 @@ const links = document.querySelectorAll("nav a")
 
 links.forEach(ativarLink)
 
+
 function ativarLink(item) {
   let href = item.href
   if(href = document.location.href){
-    links.style.background-color:"black";
+    item.style.backgroundColor = "red";
   }
   console.log(href);
 }
