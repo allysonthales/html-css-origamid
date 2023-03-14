@@ -13,8 +13,7 @@ links.forEach(ativarLink)
 
 function ativarLink(item) {
   let href = item.href
-  if(href = document.location.href){
+  if(href == document.location.href){
     item.style.backgroundColor = "red";
   }
-  console.log(href);
 }
